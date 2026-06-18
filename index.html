@@ -6,122 +6,54 @@
     <title>পরীক্ষার ফলাফল - আল জামিয়াতুল ইসলামিয়া দারুল উলূম বাংলাদেশ</title>
     <style>
         * { box-sizing: border-box; }
-        body { font-family: 'Arial', sans-serif; background-color: #f0f2f5; margin: 0; padding: 15px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        
-        .result-container { 
-            width: 100%; 
-            max-width: 600px; 
-            background-color: #ffffff; 
-            border: 1px solid #dcdcdc; 
-            border-radius: 8px; 
-            padding: 20px; 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
-        }
-        
+        body { font-family: 'Arial', sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .result-container { background-color: #ffffff; width: 100%; max-width: 600px; border: 1px solid #dcdcdc; border-radius: 8px; padding: 25px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
         .header-section { text-align: center; margin-bottom: 25px; }
-        
-        /* চোখ ধাঁধানো রাজকীয় থ্রি-ইমেজ কন্টেইনার স্টাইল */
-        .royal-header-images {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-        
-        /* দুই পাশের ক্রেস্টের সুন্দর সাইজ ও গ্লো ইফেক্ট */
-        .crest-img {
-            width: 55px;
-            height: auto;
-            object-fit: contain;
-            filter: drop-shadow(0px 2px 5px rgba(212, 175, 55, 0.5)); /* হালকা গোল্ডেন গ্লো */
-        }
-        
-        /* মাঝখানের লোগো */
-        .logo-img { 
-            width: 85px; 
-            height: 85px; 
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #00796b;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-        
-        .institution-name { font-size: 20px; font-weight: bold; color: #004d40; margin: 8px 0 5px 0; line-height: 1.3; }
+        .logo-img { width: 80px; height: 80px; display: block; margin: 0 auto 15px auto; border-radius: 50%; object-fit: cover; border: 2px solid #00796b; }
+        .institution-name { font-size: 20px; font-weight: bold; color: #004d40; margin: 5px 0; }
         .address { font-size: 14px; color: #444; margin: 3px 0; }
         .official-phone { font-size: 14px; color: #00796b; font-weight: bold; margin: 3px 0; }
         .exam-title { font-size: 16px; font-weight: bold; color: #111; margin: 15px 0; background-color: #f4f4f4; padding: 8px; border-radius: 4px; }
-        
-        .info-table, .marks-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }
+        .info-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }
         .info-table td { border: 1px solid #cccccc; padding: 10px; width: 25%; }
         .label { background-color: #f9f9f9; font-weight: bold; }
+        .marks-table { width: 100%; border-collapse: collapse; font-size: 14px; }
         .marks-table th { background-color: #00796b; color: white; padding: 10px; border: 1px solid #004d40; }
         .marks-table td { border: 1px solid #cccccc; padding: 10px; text-align: center; }
         .total-row { background-color: #e0f2f1; font-weight: bold; color: #004d40; }
     </style>
 </head>
 <body>
-
 <div class="result-container">
-
-    <!-- মাদরাসা হেডার সেকশন (রাজকীয় থ্রি-ইমেজ লেআউট) -->
     <div class="header-section">
-        <div class="royal-header-images">
-            <img src="lala.png" alt="Crest Left" class="crest-img">
-            <img src="ali.jpg" alt="Logo Center" class="logo-img">
-            <img src="lala.png" alt="Crest Right" class="crest-img">
-        </div>
-        
-        <div class="institution-name">আল জামিয়াতুল ইসলামিয়া<br>দারুল উলূম বাংলাদেশ</div>
+        <img src="ali.jpg" alt="Logo" class="logo-img">
+        <div class="institution-name">আল জামিয়াতুল ইসলামিয়া দারুল উলূম বাংলাদেশ</div>
         <div class="address">২৭/বি, পাকুরিয়া বাজার, উত্তরা, ঢাকা-১২৩০</div>
-        <div class="official-phone">অফিশিয়াল নাম্বার: ০১৯২৩৩৩৫৫৫৪</div>
-        <div class="exam-title">দাওরায়ে হাদিস হিজরী ১৪৪৬-৪৭ বার্ষিক পরীক্ষার ফলাফল</div>
+        <div class="official-phone">অফিশিয়াল নাম্বার: ০১৯২৩৩৩৬৫৫৪</div>
+        <!-- ব্র্যাকেটের ০১ লেখাটি বাদ দেওয়া হয়েছে -->
+        <div class="exam-title">দাওরায়ে হাদীস হিজরী ১৪৪৬-৪৭ বার্ষিক পরীক্ষার ফলাফল</div>
     </div>
-
-    <!-- ছাত্র তথ্য টেবিল -->
     <table class="info-table">
-        <tr>
-            <td class="label">নিবন্ধন নং</td>
-            <td>২০২৫০৩৪১</td>
-            <td class="label">রোল নং</td>
-            <td>১০৫</td>
-        </tr>
-        <tr>
-            <td class="label">নাম</td>
-            <td style="font-weight:bold;">আলী হোসাইন মোল্লা</td>
-            <td class="label">পিতার নাম</td>
-            <td>জালাল উদ্দিন মোল্লা</td>
-        </tr>
-        <tr>
-            <td class="label">বিভাগ</td>
-            <td style="color:#00796b; font-weight:bold;">জায়িদ জিদ্দান</td>
-            <td class="label">জন্ম তারিখ</td>
-            <td>১৮ ই ফেব্রুয়ারি ২০০০</td>
-        </tr>
+        <tr><td class="label">নিবন্ধন নং</td><td>২০২৫০৩৪১</td><td class="label">রোল নং</td><td>১০৫</td></tr>
+        <tr><td class="label">নাম</td><td style="font-weight:bold;">আলী হোসাইন মোল্লা</td><td class="label">পিতার নাম</td><td>জালাল উদ্দিন মোল্লা</td></tr>
+        <tr><td class="label">বিভাগ</td><td style="color:#00796b; font-weight:bold;">জায়্যিদ জিদ্দান</td><td class="label">জন্ম তারিখ</td><td>১৮ ই ফেব্রুয়ারি ২০০০</td></tr>
     </table>
-
-    <!-- নম্বরপত্র টেবিল -->
     <table class="marks-table">
-        <tr>
-            <th>কোড</th>
-            <th>কিতাবের নাম</th>
-            <th>প্রাপ্ত নম্বর</th>
-        </tr>
-        <tr>
-            <td>১০১</td>
-            <td>বুখারী শরীফ ১ম খণ্ড</td>
-            <td>৭০</td>
-        </tr>
-        <tr class="total-row">
-            <td colspan="2" style="text-align:right; padding-right:10px;">মোট নম্বর</td>
-            <td>৬৯১</td>
-        </tr>
-        <tr class="total-row">
-            <td colspan="2" style="text-align:right; padding-right:10px;">ফলাফল</td>
-            <td>জায়িদ জিদ্দান</td>
-        </tr>
+        <tr><th>কোড</th><th>কিতাবের নাম</th><th>প্রাপ্ত নম্বর</th></tr>
+        <tr><td>১০১</td><td>বুখারী শরীফ ১ম খণ্ড</td><td>৭০</td></tr>
+        <tr><td>১০২</td><td>বুখারী শরীফ ২য় খণ্ড</td><td>৬৫</td></tr>
+        <tr><td>১০৩</td><td>মুসলিম শরীফ ১ম খণ্ড</td><td>৬০</td></tr>
+        <tr><td>১০৪</td><td>মুসলিম শরীফ ২য় খণ্ড</td><td>৫৫</td></tr>
+        <tr><td>১০৫</td><td>তিরমিযী শরীফ</td><td>৭৫</td></tr>
+        <tr><td>১০৬</td><td>আবুদাউদ শরীফ</td><td>৬৭</td></tr>
+        <tr><td>১০৭</td><td>নাসাঈ ও ইবনে মাজাহ শরীফ</td><td>৬৫</td></tr>
+        <tr><td>১০৮</td><td>মুওয়াত্তা ইমাম মালিক ও ইমাম মুহাম্মদ</td><td>৭৫</td></tr>
+        <tr><td>১০৯</td><td>কিরাআত ও তাজবীদ</td><td>৯০</td></tr>
+        <tr><td>১১০</td><td>কাওয়াঈদে দাওয়াহ</td><td>৭০</td></tr>
+        <tr class="total-row"><td colspan="2" style="text-align:right; padding-right:10px;">মোট নম্বর</td><td>৬৯২</td></tr>
+        <tr class="total-row"><td colspan="2" style="text-align:right; padding-right:10px;">ফলাফল</td><td>জায়্যিদ জিদ্দান</td></tr>
     </table>
 </div>
-
 </body>
 </html>
+

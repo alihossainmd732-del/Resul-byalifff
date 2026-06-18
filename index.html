@@ -6,11 +6,9 @@
     <title>পরীক্ষার ফলাফল - আল জামিয়াতুল ইসলামিয়া দারুল উলূম বাংলাদেশ</title>
     <style>
         * { box-sizing: border-box; }
-        body { font-family: 'Arial', sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        body { font-family: 'Arial', sans-serif; background-color: #f0f2f5; margin: 0; padding: 15px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
         
-        /* মূল রেজাল্ট কার্ডের পজিশন ঠিক করা */
         .result-container { 
-            position: relative; /* ক্রেস্টকে কর্নারে বসানোর জন্য এটি দরকার */
             width: 100%; 
             max-width: 600px; 
             background-color: #ffffff; 
@@ -22,28 +20,34 @@
         
         .header-section { text-align: center; margin-bottom: 25px; }
         
-        /* আপনার লাল দাগ দেওয়া খালি জায়গায় ক্রেস্টের বডি বসানোর কোড */
+        /* চোখ ধাঁধানো রাজকীয় থ্রি-ইমেজ কন্টেইনার স্টাইল */
+        .royal-header-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        /* দুই পাশের ক্রেস্টের সুন্দর সাইজ ও গ্লো ইফেক্ট */
         .crest-img {
-            position: absolute;
-            top: 20px;       /* উপর থেকে দূরত্ব */
-            left: 20px;      /* বাম থেকে দূরত্ব */
-            width: 55px;     /* একদম পারফেক্ট ছোট সাইজ */
+            width: 55px;
             height: auto;
             object-fit: contain;
+            filter: drop-shadow(0px 2px 5px rgba(212, 175, 55, 0.5)); /* হালকা গোল্ডেন গ্লো */
         }
-
-        /* লোগোকে তার নিজের জায়গায় ঠিক রাখা */
+        
+        /* মাঝখানের লোগো */
         .logo-img { 
-            width: 80px; 
-            height: 80px; 
-            margin: 0 auto 10px auto; 
-            display: block; 
+            width: 85px; 
+            height: 85px; 
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid #00796b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
         
-        .institution-name { font-size: 20px; font-weight: bold; color: #004d40; margin: 5px 0; }
+        .institution-name { font-size: 20px; font-weight: bold; color: #004d40; margin: 8px 0 5px 0; line-height: 1.3; }
         .address { font-size: 14px; color: #444; margin: 3px 0; }
         .official-phone { font-size: 14px; color: #00796b; font-weight: bold; margin: 3px 0; }
         .exam-title { font-size: 16px; font-weight: bold; color: #111; margin: 15px 0; background-color: #f4f4f4; padding: 8px; border-radius: 4px; }
@@ -59,15 +63,18 @@
 <body>
 
 <div class="result-container">
-    <!-- আপনার ক্রেস্টের বডিটি বামের কর্নারে ভাসমান থাকবে -->
-    <img src="lala.png" alt="Crest" class="crest-img">
 
-    <!-- মাদরাসা হেডার সেকশন -->
+    <!-- মাদরাসা হেডার সেকশন (রাজকীয় থ্রি-ইমেজ লেআউট) -->
     <div class="header-section">
-        <img src="ali.jpg" alt="Logo" class="logo-img">
-        <div class="institution-name">আল জামিয়াতুল ইসলামিয়া দারুল উলূম বাংলাদেশ</div>
+        <div class="royal-header-images">
+            <img src="lala.png" alt="Crest Left" class="crest-img">
+            <img src="ali.jpg" alt="Logo Center" class="logo-img">
+            <img src="lala.png" alt="Crest Right" class="crest-img">
+        </div>
+        
+        <div class="institution-name">আল জামিয়াতুল ইসলামিয়া<br>দারুল উলূম বাংলাদেশ</div>
         <div class="address">২৭/বি, পাকুরিয়া বাজার, উত্তরা, ঢাকা-১২৩০</div>
-        <div class="official-phone">অফিশিয়াল নাম্বার: ০১৯২৩৩十五章৫৫৪</div>
+        <div class="official-phone">অফিশিয়াল নাম্বার: ০১৯২৩৩৩৫৫৫৪</div>
         <div class="exam-title">দাওরায়ে হাদিস হিজরী ১৪৪৬-৪৭ বার্ষিক পরীক্ষার ফলাফল</div>
     </div>
 
